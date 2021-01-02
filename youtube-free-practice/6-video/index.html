@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- preloader -->
+    <div class="preloader">
+      <img src="./preloader.gif" alt="preloader" class="preloader-item" />
+    </div>
+    <!-- header -->
+    <header>
+      <video class="video-container" muted autoplay loop>
+        <source src="./video.mp4" type="video/mp4" />
+      </video>
+      <h1>Project Video</h1>
+    </header>
+    <!-- video switch -->
+    <button class="switch-btn">
+      <span><i class="fas fa-play"></i></span>
+      <span><i class="fas fa-pause"></i></span>
+      <span class="switch"></span>
+    </button>
+    <!-- javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
