@@ -1,6 +1,6 @@
 # Mini Project Grocery
 
--freecodecamp
+- freecodecamp
 
 Logic untuk add/remove/update item to DOM.
 

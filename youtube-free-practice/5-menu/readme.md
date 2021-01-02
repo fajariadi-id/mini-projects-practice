@@ -1,6 +1,6 @@
 # Mini Project Menu
 
--freecodecamp
+- freecodecamp
 
 Logic untuk array map, reduce, dan filter.
 Membuat tampilan yang dinamis terhadap data JSON.

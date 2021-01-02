@@ -1,5 +1,5 @@
 # Mini Project show Modal
 
--freecodecamp
+- freecodecamp
 
 Logic untuk add/remove class

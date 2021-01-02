@@ -1,5 +1,5 @@
 # Mini Project Testimonial Switch
 
--freecodecamp
+- freecodecamp
 
 Logic untuk menampilkan data JSON secara dinamis

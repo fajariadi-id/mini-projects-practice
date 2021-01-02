@@ -1,5 +1,5 @@
 # Mini Project Counter
 
--freecodecamp
+- freecodecamp
 
 Logic untuk event click button -> increase / decrease

@@ -1,6 +1,6 @@
 # Mini Project Scroll Animation Navbar
 
--freecodecamp
+- freecodecamp
 
 Logic untuk menggunakan event window scroll.
 Membuat nav-link secara dinamis terhadap container.

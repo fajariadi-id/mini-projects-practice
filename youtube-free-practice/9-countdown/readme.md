@@ -1,5 +1,5 @@
 # Mini Project Countdown timer
 
--freecodecamp
+- freecodecamp
 
 Logic untuk menggunakan method pewaktuan
