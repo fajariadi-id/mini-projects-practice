@@ -1,0 +1,275 @@
+/* *======= Essay =======* */
+/*
+Bagian Syntax dari CSS
+contoh:
+section.contact a {
+  text-decoration: none;
+  color: white;
+}
+Penjelasan:
+section.contact a {} adalah element pada HTML yang dijadikan Selector pada CSS untuk dilakukan styling,
+text-decoration: adalah properti untuk melakukan styling, dan
+none; adalah salah satu nilai yang digunakan untuk properti text-decoration:
+color: adalah properti untuk melakukan styling, dan
+white; adalah salah satu nilai yang digunakan untuk properti color:
+
+Spesificity
+adalah perbandingan bobot pada deklarasi css (selector).
+semakin spesifik deklarasi sebuah elemen HTML dilakukan pada CSS, maka elemen tersebut yang akan terpilih sebagai selector untuk dilakukan styling
+
+Responsive Website
+adalah sebuah Website yang didesain agar tampilannya tetap nyaman dilihat disemua perangkat
+
+Media Queries
+adalah suatu teknik css layout untuk membuat responsive website berdasarkan parameter yang ditentukan.
+
+CSS Flexbox dan CSS Grid
+CSS Flexbox adalah sebuah modul layout 1 dimensi untuk menyusun, mensejajarkan dan mendistribusikan jarak antar item pada sebuah container.
+CSS Grid adalah sebuah modul untuk mendefinisikan sistem layout berbentuk grid dalam 2 dimensi.
+Perbedaan keduanya adalah CSS Flexbox hanya dapat mengatur 1 dimensi, maksudnya kita hanya dapat mengatur elemen secara baris atau kolom,
+sedangkan CSS Grid bisa mengatur 2 dimensi sekaligus, maksudnya kita bisa mengatur elemen secara baris dan kolom.
+
+Bootstrap
+adalah sebuah framework atau kerangka kerja untuk CSS yang mana memudahkan untuk membuat website.
+
+*/
+
+/* *======= VARIABEL =======* */
+:root {
+  --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Roboto", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 600;
+  --fw-strong: 800;
+
+  --clr-white: #f6f6f4;
+  --clr-black: #222;
+
+  --clr-main: #;
+  --clr-main-lighter: #;
+  --clr-main-darker: #;
+
+  --radius: 0.5rem;
+  --transition: all 0.3s ease;
+  --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* *======= GLOBAL STYLE =======* */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  color: var(--clr-black);
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* *======= GLOBAL CLASS =======* */
+.btn {
+  text-transform: capitalize;
+  border-color: transparent;
+  background: transparent;
+  border: 2px solid var(--clr-main-darker);
+  color: var(--clr-main-darker);
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--clr-main-darker);
+  color: var(--clr-white);
+}
+
+/* .section-center {
+  width: 80vw;
+  margin: 5rem auto;
+  max-width: 1170px;
+} */
+
+/* .container {
+  width: 90vw;
+  margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 85vw;
+  }
+} */
+
+/* *======= Styling =======* */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(246, 246, 244, 1)),
+    url(./banner.jpg) center/cover no-repeat;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-shadow: 0 -2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nama {
+  color: white;
+}
+
+.banner img {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.link-container {
+  margin-top: 5rem;
+}
+
+.link {
+  display: inline-block;
+  color: var(--clr-black);
+  transition: var(--transition);
+}
+.link:hover {
+  color: #22222280;
+  transform: translateY(10px);
+  text-decoration: none;
+}
+
+.about {
+  height: 60vh;
+}
+
+.history h6 {
+  font-weight: var(--fw-bold);
+}
+
+.footer {
+  height: 40vh;
+  background: var(--clr-black);
+}
+
+.img-container {
+  width: 100px;
+}
+
+.card a {
+  color: var(--clr-black);
+  transition: var(--transition);
+}
+.card a:hover {
+  color: #22222280;
+}
+
+.fa-instagram {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .banner img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .nama {
+    font-size: 2.5rem;
+  }
+
+  .profesi {
+    font-size: 1rem;
+  }
+
+  .history {
+    margin-left: 7px;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  .footer {
+    margin-top: 4rem;
+    height: 55vh;
+  }
+}
