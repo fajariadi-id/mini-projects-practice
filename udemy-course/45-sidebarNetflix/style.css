@@ -1,0 +1,252 @@
+/* *======= Google Fonts =======* */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap&family=Roboto:wght@400;700&display=swap");
+
+/* *======= VARIABEL =======* */
+:root {
+  --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Roboto", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 700;
+
+  --clr-white: #f6f6f4;
+  --clr-black: #222222;
+  --clr-black-hover: #222222cc;
+
+  --radius: 0.5rem;
+  --transition: all 0.3s ease;
+  --transition-cb: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --shadow-light: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* *======= GLOBAL STYLE =======* */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* *======= GLOBAL CLASS =======* */
+.btn {
+  border: none;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--ff-primary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--clr-black-hover);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* *======= Sidebar Netflix =======* */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--clr-black);
+  transition: var(--transition);
+}
+
+.nav-btn:hover {
+  color: var(--clr-black-hover);
+}
+
+.nav-btn:focus {
+  outline: none;
+}
+
+.open-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+.text {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 140px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: var(--transition);
+}
+
+.nav.visible {
+  transform: translateX(0);
+}
+
+.nav-black {
+  background-color: var(--clr-black);
+  width: 50%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.3s;
+}
+
+.nav-black.visible {
+  transition-delay: 0s;
+}
+
+.nav-red {
+  background-color: red;
+  width: 95%;
+  transition-delay: 0.2s;
+}
+
+.nav-red.visible {
+  transition-delay: 0.2s;
+}
+
+.nav-white {
+  background-color: var(--clr-white);
+  width: 95%;
+  padding: 1.5rem;
+  transition-delay: 0s;
+}
+
+.nav-white.visible {
+  transition-delay: 0.3s;
+}
+
+.close-btn {
+  position: fixed;
+  top: 1.8rem;
+  right: 2rem;
+  opacity: 0.3;
+}
+
+.list {
+  margin: 2rem 0 1rem;
+}
+
+.list li {
+  margin: 0.5rem 0;
+}
+
+.list li a {
+  color: var(--clr-black);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.list ul {
+  padding-left: 1rem;
+}
+
+.bur {
+  background-color: burlywood;
+  width: 100%;
+}
+
+.red {
+  background-color: red;
+  width: 100%;
+}

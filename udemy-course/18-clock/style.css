@@ -1,0 +1,263 @@
+/* *======= Google Fonts =======* */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap&family=Roboto:wght@400;700&display=swap");
+
+/* *======= VARIABEL =======* */
+:root {
+  --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Roboto", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 700;
+
+  --clr-white: #f6f6f4;
+  --clr-black: #222222;
+  --clr-black-hover: #222222cc;
+
+  --radius: 0.5rem;
+  --transition: all 0.3s ease;
+  --transition-cb: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --shadow-light: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* *======= GLOBAL STYLE =======* */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  color: var(--clr-black);
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-black);
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* *======= GLOBAL CLASS =======* */
+.btn {
+  border: none;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--ff-primary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--clr-black-hover);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* *======= Clock =======* */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: var(--transition);
+}
+
+.toggle {
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  border-radius: var(--radius);
+  border: none;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  transition: var(--transition);
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  left: calc(50vw - 60px);
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.toggle:active {
+  transform: scale(0.95);
+}
+
+.container.dark {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+.container.dark .toggle {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid var(--clr-black);
+  width: 250px;
+  height: 250px;
+  transition: var(--transition);
+}
+
+.container.dark .clock {
+  border: 3px solid var(--clr-white);
+}
+
+.needle {
+  height: 65px;
+  width: 3px;
+  background-color: var(--clr-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+.needle.hour {
+  background-color: var(--clr-black);
+}
+
+.needle.minute {
+  height: 100px;
+  background-color: var(--clr-black);
+}
+
+.needle.second {
+  background-color: red;
+}
+
+.container.dark .needle.hour,
+.container.dark .needle.minute,
+.container.dark .circle {
+  background-color: var(--clr-white);
+}
+
+.center-point {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.center-point::after {
+  content: "";
+  background-color: var(--clr-black);
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.time {
+  font-size: 3rem;
+}
+
+.date {
+  color: #aaa;
+  letter-spacing: 1px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--clr-black);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
