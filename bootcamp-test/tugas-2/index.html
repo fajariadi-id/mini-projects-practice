@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fajar Riadi</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap&family=Roboto:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- Eksternal CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- internal CSS -->
+    <style>
+      .footer h4,
+      .footer p,
+      .footer ul {
+        color: var(--clr-white);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- banner -->
+    <main class="banner">
+      <div class="container text-center">
+        <img
+          src="./formal.jpg"
+          alt="Foto Profil"
+          width="30%"
+          class="rounded-circle img-thumbnail"
+        />
+        <h1 class="display-4 nama">Fajar Riadi</h1>
+        <p class="lead profesi">
+          Hello! <br />
+          I'm Fresh Graduated from Universitas Gunadarma.
+        </p>
+        <div class="link-container">
+          <a href="#about" class="link">
+            Tentang Saya <br /><i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- about -->
+    <section id="about" class="">
+      <div class="about pt-3 container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>tentang saya</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-11">
+            <p>
+              Saya memiliki minat berkarir sebagai programmer, lebih tepatnya
+              sebagai <strong>Front End Web Development</strong> karena saya
+              menyukai pemrograman dan <em>design</em>. Saya merasa
+              <em>passionate</em> sekali ketika mengerjakan tugas pemrograman
+              dan menyukai <em>problem solving</em> didalamnya.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center history">
+          <div class="col-md-5">
+            <h6>Kualifikasi Akademik</h6>
+            <ol>
+              <li>SDN Jelambar Baru 03 Pagi</li>
+              <li>SMPN 1 Kosambi</li>
+              <li>SMAN 12 Kab. Tangerang</li>
+              <li>Universitas Gunadarma</li>
+            </ol>
+          </div>
+          <div class="col-md-2">
+            <h6>Hobi</h6>
+            <ul>
+              <li>Bernyanyi</li>
+              <li>Olahraga</li>
+              <li>Fotografi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- footer - contact -->
+      <div class="footer pt-5">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-md">
+              <div class="card bg-light mb-3">
+                <div class="card-header">Hubungi Saya</div>
+                <div class="card-body">
+                  <div class="row text-center">
+                    <div class="col">
+                      <div class="img-container">
+                        <img src="./logo.svg" alt="Logo arkademy" />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="https://www.instagram.com/fajariadi_"
+                        target="_blank"
+                      >
+                        <i class="pt-1 fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <h4>alamat</h4>
+              <p>
+                Jl. Salembaran Ds. Cengklong Kosambi Kabupaten Tangerang Banten.
+              </p>
+            </div>
+            <div class="col-md">
+              <h4>Dibuat dengan menerapkan</h4>
+              <!-- Inline CSS -->
+              <ul style="list-style: none">
+                <li>CSS Grid</li>
+                <li>Bootstrap</li>
+                <li>Media Query</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+# Spesifikasi
+
+Buatlah repl baru dengan bahasa “HTML, CSS, JS” (atau satu repl dengan tugas sebelumnya namun membuat file baru dengan nama tugas3.html)
+
+1. Buatlah halaman website sesuai dengan di gambar bawah, dengan menggunakan Bootstrap 
+Ketentuan:
+- Yang harus dibuat adalah halaman pertama saja (yang terlampir gambarnya)
+- Namun jika bisa menyelesaikan halaman lainnya maka lebih baik
+- Link Figma: https://www.figma.com/
+- Untuk background bisa mencari di unsplash.com dengan keyword "Bali"
+- Untuk icon bisa login ke figma.com lalu klik iconnya dan pilih export
+- Font dan lainnya bisa menyesuaikan sesuai template, silahkan login di Figma dan lihat nama fontnya, cari di google font atau yang lainnya
+
+2. Apa yang dimaksud dengan Grid System Bootstrap? Kalau bisa berikan contohnya. Jika sudah diterapkan di soal 1 maka berikan keterangan di bagian mana penerapannya. Tulis jawabannya dengan menggunakan Comment HTML di file Soal 1 di bagian <head>

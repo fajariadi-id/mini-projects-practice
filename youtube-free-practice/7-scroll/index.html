@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav" class="fixed-nav">
+        <div class="nav-center">
+          <!-- navbar header -->
+          <!-- overlay -->
+          <div class="nav-header">
+            <img src="./logo.svg" alt="logo" class="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="links-container">
+            <ul class="links">
+              <li><a href="#home" class="scroll-link">home</a></li>
+              <li><a href="#about" class="scroll-link">about</a></li>
+              <li><a href="#services" class="scroll-link">services</a></li>
+              <li><a href="#tours" class="scroll-link">tours</a></li>
+            </ul>
+          </div>
+          <div class="toggle-overlay"></div>
+        </div>
+        <!-- links -->
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>scroll project</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+            sapiente amet nam vitae debitis officiis temporibus autem, delectus
+            reiciendis, soluta mollitia sunt esse molestiae earum?
+          </p>
+          <a href="#tours" class="scroll-link btn btn-white">explore tours</a>
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>about <span>us</span></h2>
+      </div>
+    </section>
+    <!-- services -->
+    <section id="services" class="section">
+      <div class="title">
+        <h2>our <span>services</span></h2>
+      </div>
+    </section>
+    <!-- tours -->
+    <section id="tours" class="section">
+      <div class="title">
+        <h2>featured <span>tours</span></h2>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        copyright &copy; tours company <span id="date"></span>. all rights
+        reserved
+      </p>
+    </footer>
+    <!-- back to top btn -->
+    <a href="#home" class="scroll-link top-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>

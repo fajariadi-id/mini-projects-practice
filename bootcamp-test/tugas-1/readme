@@ -1,0 +1,36 @@
+# Spesifikasi
+
+Buatlah repl baru dengan bahasa “HTML, CSS, JS”
+
+1. Buatlah file HTML yang isinya adalah data diri kalian dengan ketentuan sebagai berikut:
+
+- Mengikuti instruksi di bawah secara berurut!
+- Terdapat deklarasi <!DOCTYPE html> di awal file
+- Isi tag <title> dengan Nama Kalian
+- <h1> dengan isi Nama Kalian
+- <h3> dengan isi profesi kalian
+- <p> dengan isi alasan paragraf kenapa kalian ingin menjadi programmer. Tebalkan kata-kata penting dengan <strong> , dan miringkan kata dalam bahasa Inggris dengan <em> jika ada.
+- <p> lagi dengan isi alamat kalian (Alamat: Jalan…)
+- <div> dengan isi:
+    - <h4>Sekolah:</h4>
+    - <ol><li> (ordered list) dengan isi urutan sekolah kalian dari SD hingga yang terakhir
+- <div> dengan isi:
+    - <h4>Hobi:</h4>
+    - <ul><li> (unordered list) dengan isi hobi kalian
+- <a> dengan isi URL Profil Sosial Media kalian (misal Instagram: https://../)
+- <img> dengan isi logo
+
+Contoh:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rudi Hartono</title>
+</head>
+<body>
+dan seterusnya…
+
+Ketentuan:
+
+- Jika kalian bisa lebih baik/lebih lengkap/lebih banyak penggunaan tag atau mau menambahkan data yang lain, maka silahkan
+- Jika kalian ingin menerapkan styling langsung maka silahkan

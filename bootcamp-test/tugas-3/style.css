@@ -1,0 +1,162 @@
+/* *======= VARIABEL =======* */
+:root {
+  --ff-primary: "Pacifico", sans-serif;
+  --ff-secondary: "sf", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 600;
+  --fw-strong: 800;
+
+  --clr-white: #f6f6f4;
+  --clr-black: #222;
+
+  --clr-main: #;
+  --clr-main-lighter: #;
+  --clr-main-darker: #;
+
+  --radius: 0.5rem;
+  --transition: all 0.3s ease;
+  --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* *======= GLOBAL STYLE =======* */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-white);
+  color: var(--clr-white);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* *======= Styling =======* */
+.banner {
+  position: relative;
+  height: 100vh;
+  background: url(./img/bgHomepage.png) center/cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 38, 61, 0.8);
+}
+
+.typo {
+  line-height: 1.8;
+}
+
+.typo span {
+  color: #fcb371;
+}
+
+.img-container img {
+  width: 20%;
+  margin: 2rem auto;
+}
+
+.p-banner {
+  font-family: var(--ff-secondary);
+}
+
+.btn-abt,
+.btn-res {
+  color: #fcb371;
+  padding: 0.6rem 0;
+  width: 156px;
+  border: 2px solid #fcb371;
+  border-radius: var(--radius);
+  margin: 0 auto;
+  transition: var(--transition);
+}
+
+.btn-abt:hover {
+  background: #fcb371;
+  color: var(--clr-white);
+}
+
+.btn-res {
+  background: #fcb371;
+  color: var(--clr-white);
+}
+
+.btn-res:hover {
+  background: #fcb371cc;
+}

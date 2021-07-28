@@ -1,0 +1,170 @@
+/* *======= VARIABEL =======* */
+:root {
+  --ff-primary: "Pacifico", sans-serif;
+  --ff-secondary: "sf", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 600;
+  --fw-strong: 800;
+
+  --clr-white: #f6f6f4;
+  --clr-black: #222;
+
+  --clr-main: #;
+  --clr-main-lighter: #;
+  --clr-main-darker: #;
+
+  --radius: 0.5rem;
+  --transition: all 0.3s ease;
+  --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* *======= GLOBAL STYLE =======* */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background-color: var(--clr-white);
+  color: var(--clr-white);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* *======= Styling =======* */
+.banner {
+  position: relative;
+  height: 100vh;
+  background: url(../img/bgRes.jpg) center/cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 38, 61, 0.8);
+}
+
+.back img {
+  position: absolute;
+  top: 4rem;
+  left: 6rem;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: var(--transition);
+}
+
+.back img:hover {
+  transform: translateX(-1rem);
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 5rem;
+  color: #fcb371;
+  font-family: var(--ff-primary);
+}
+
+.form-control {
+  border-radius: var(--radius);
+  height: 3.5rem;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-submit {
+  padding: 1rem 3rem;
+  border-radius: var(--radius);
+  border: none;
+  background: #fcb371;
+  color: var(--clr-white);
+  font-family: var(--ff-primary);
+  transition: var(--transition);
+}
+
+.btn-submit:hover {
+  background: #fcb371cc;
+}
+
+@media screen and (max-width: 992px) {
+  .back img {
+    top: 1.5rem;
+    left: 2rem;
+    width: 25px;
+    height: 25px;
+  }
+}

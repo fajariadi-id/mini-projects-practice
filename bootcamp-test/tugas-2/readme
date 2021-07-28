@@ -1,0 +1,52 @@
+# Spesifikasi
+
+Buatlah repl baru dengan bahasa “HTML, CSS, JS” (atau satu repl dengan tugas sebelumnya namun membuat file baru dengan nama tugas2.html)
+
+1. Copy semua isi HTML tugas 1 lalu paste dan tambahkan styling CSS dengan mekanisme:
+- Terapkan styling:
+    - Inline
+    - Internal
+    - External
+- Style CSS yang harus diterapkan:
+    - Tulisan <h1> Nama Kalian terapkan:
+        - warna biru
+        - posisi di tengah halaman
+    - <h3> terapkan:
+        - margin-top 20px
+        - padding-left 30px
+    - <p> paragraf kenapa kalian ingin menjadi programmer terapkan:
+        - font-family Sans-serif
+        - font-size 17px
+        - font-weight bold
+    - <p> alamat terapkan:
+        - background-color yellow
+    - <img> terapkan:
+        - width: 500px
+        - height: 500px
+- Style di atas harus dibagi penerapannya ke Inline CSS, Internal CSS dan External CSS dengan minimal 1 style diterapkan di masing-masing tipe penerapan CSS. Misal warna <h1> di Inline, posisi tengah <h1> di Internal, sisanya di External CSS
+Contoh:
+<head>
+    <title>Rudi Hartono</title>
+    <style>…
+dan seterusnya…
+
+2. Jelaskan bagian Syntax dari CSS, misal Selector dll. Tulis jawabannya dengan menggunakan CSS Comment multi-line!
+
+3. Apa yang dimaksud CSS Specificity? Jelaskan dan tulis jawabannya dengan menggunakan CSS Comment multi-line!
+
+4. Apa yang dimaksud dengan Responsive Website? Jelaskan dan tulis jawabannya dengan menggunakan CSS Comment multi-line!
+
+5. Apa yang dimaksud CSS Media Queries? Jelaskan dan tulis jawabannya dengan menggunakan CSS Comment multi-line!
+
+6. Apa yang dimaksud CSS Flexbox dan Grid? Jelaskan perbedaannya dan tulis jawabannya dengan menggunakan CSS Comment multi-line!
+
+7. Apa yang dimaksud dengan Bootstrap? Jelaskan dan tulis jawabannya dengan menggunakan CSS Comment multi-line!
+
+8. Bonus Soal, Terapkan Media Queries, Flexbox, Grid atau Bootstrap jika kalian bisa, pada soal nomor 1 di atas, dan tambahkan tag <p> di paling bawah dengan isi apa yang kalian sudah terapkan. Contoh <p>sudah menerapkan Flexbox dan Grid<p>. Jika tidak menulis maka dianggap belum menerapkan!
+
+Ketentuan:
+- Jika kalian bisa lebih baik/lebih lengkap/lebih banyak penggunaan style atau mau menambahkan data yang lain, maka silahkan
+- Jika kalian ingin menerapkan styling yang lebih advanced, maka silahkan
+- Tidak boleh satu file yang sama dengan tugas 1, harus berbeda!
+
+
